@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func MiddlewareLogger() engine.Middleware {
+func MiddlewareLogs() engine.Middleware {
 
 	format := time.Now().Format("2006/01/02 - 15:04:05")
 	logger := log.New(os.Stdout, "", 0)
